@@ -1,5 +1,5 @@
 <section class="contact-book-wrapper">
-  <h1 class="title">📖 CONTACT BOOK</h1>
+  <h1 class="title">📖 CONTACTS</h1>
   <div class="new-contact">
     <input type="text" placeholder="Name" />
     <input type="text" placeholder="Company" />
@@ -43,6 +43,7 @@
     } @else {
     <li class="contact-editing">
       <input type="text" placeholder="Name" value="{{ contact.name }}" />
+      <!--minute 39:41 - https://www.youtube.com/watch?v=mAnTRqO_zw8&t=2381s -->
       <input type="text" placeholder="Company" value="{{ contact.company }}" />
       <input type="email" placeholder="Email" value="{{ contact.email }}" />
       <input type="text" placeholder="Phone" value="{{ contact.phone }}" />
@@ -52,6 +53,11 @@
         rows="5"
         value="{{ contact.comment }}"
       ></textarea>
+      <div class="editing-buttons-wrapper">
+        <button (click)="editContact(contact)">Save</button>
+        <!-- SET "contact" VALUE USING FORM before passing it to editContact() -->
+        <button (click)="changeEditing(contact, false)">Cancel</button>
+      </div>
     </li>
     } }
   </ul>
