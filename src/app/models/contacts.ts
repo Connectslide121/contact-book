@@ -6,6 +6,7 @@ export interface Contact {
   company: string;
   comment: string;
   contacted: boolean;
+  editing: boolean;
 }
 
-export type FilterType = 'all' | 'contacted';
+export type FilterType = 'all' | 'contacted' | 'uncontacted';
