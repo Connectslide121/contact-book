@@ -1,13 +1,6 @@
 <section class="contact-book-wrapper">
   <h1 class="title">📖 CONTACTS</h1>
-  <div class="new-contact">
-    <input type="text" placeholder="Name" />
-    <input type="text" placeholder="Company" />
-    <input type="email" placeholder="Email" />
-    <input type="text" placeholder="Phone" />
-    <textarea type="text" placeholder="Comment" rows="5"></textarea>
-    <button>+</button>
-  </div>
+  <app-new-contact-form />
   <div class="filters">
     <button (click)="changeFilter('all')" [class.active]="filter() === 'all'">
       All
