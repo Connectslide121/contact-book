@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ContactCardComponent } from './components/contact-card/contact-card.component';
 import { NewContactFormComponent } from './components/new-contact-form/new-contact-form.component';
-import { Contact, FilterType } from './models/contacts';
+import { Contact } from './models/contacts';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +21,6 @@ export class AppComponent {
       company: 'Vidoo',
       comment:
         'in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac',
-      contacted: false,
       editing: false,
     },
     {
@@ -32,7 +31,6 @@ export class AppComponent {
       company: 'Pixoboo',
       comment:
         'nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta',
-      contacted: false,
       editing: false,
     },
     {
@@ -43,7 +41,6 @@ export class AppComponent {
       company: 'Meetz',
       comment:
         'ipsum ac tellus semper interdum mauris ullamcorper purus sit amet',
-      contacted: false,
       editing: false,
     },
     {
@@ -54,7 +51,6 @@ export class AppComponent {
       company: 'Realpoint',
       comment:
         'pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut',
-      contacted: false,
       editing: false,
     },
     {
@@ -64,7 +60,6 @@ export class AppComponent {
       phone: '503-690-9024',
       company: 'Chatterbridge',
       comment: 'in hac habitasse platea dictumst maecenas ut massa quis augue',
-      contacted: false,
       editing: false,
     },
     {
@@ -75,26 +70,27 @@ export class AppComponent {
       company: 'Meezzy',
       comment:
         'vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a',
-      contacted: false,
       editing: false,
     },
   ]);
 
-  filter = signal<FilterType>('all');
-
-  changeFilter(filterString: FilterType) {
-    this.filter.set(filterString);
+  addContact(newContact: Contact) {
+    this.contactList.set([newContact, ...this.contactList()]);
   }
 
   changeEditing(contact: Contact, editing: boolean) {
     contact.editing = editing;
   }
 
-  editContact(contact: Contact) {
+  editContact(updatedContact: Contact) {
     this.contactList.set(
-      this.contactList().map((c) => (c.id === contact.id ? contact : c))
+      this.contactList().map((contact) =>
+        contact.id === updatedContact.id ? updatedContact : contact
+      )
     );
-    console.log(this.contactList());
-    contact.editing = false;
+  }
+
+  deleteContact(contact: Contact) {
+    this.contactList.set(this.contactList().filter((c) => c.id !== contact.id));
   }
 }

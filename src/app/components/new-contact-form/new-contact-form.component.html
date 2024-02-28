@@ -1,8 +1,13 @@
-<form class="new-contact">
-  <input type="text" placeholder="Name" />
-  <input type="text" placeholder="Company" />
-  <input type="email" placeholder="Email" />
-  <input type="text" placeholder="Phone" />
-  <textarea type="text" placeholder="Comment" rows="5"></textarea>
-  <button>+</button>
+<form [formGroup]="form" class="new-contact">
+  <input type="text" placeholder="Name" formControlName="name" />
+  <input type="text" placeholder="Company" formControlName="company" />
+  <input type="email" placeholder="Email" formControlName="email" />
+  <input type="text" placeholder="Phone" formControlName="phone" />
+  <textarea
+    type="text"
+    placeholder="Comment"
+    rows="5"
+    formControlName="comment"
+  ></textarea>
+  <button type="button" (click)="addContact()">Add contact</button>
 </form>

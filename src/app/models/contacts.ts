@@ -5,8 +5,5 @@ export interface Contact {
   phone: string;
   company: string;
   comment: string;
-  contacted: boolean;
   editing: boolean;
 }
-
-export type FilterType = 'all' | 'contacted' | 'uncontacted';

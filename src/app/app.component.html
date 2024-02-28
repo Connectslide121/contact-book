@@ -1,27 +1,17 @@
 <section class="contact-book-wrapper">
   <h1 class="title">📖 CONTACTS</h1>
-  <app-new-contact-form />
-  <div class="filters">
-    <button (click)="changeFilter('all')" [class.active]="filter() === 'all'">
-      All
-    </button>
-    <button
-      (click)="changeFilter('contacted')"
-      [class.active]="filter() === 'contacted'"
-    >
-      Contacted
-    </button>
-    <button
-      (click)="changeFilter('uncontacted')"
-      [class.active]="filter() === 'uncontacted'"
-    >
-      Uncontacted
-    </button>
+  <app-new-contact-form (contactAdded)="addContact($event)" />
+  <div class="filter">
+    <input type="text" placeholder="Filter" />
   </div>
 
   <ul class="contact-list">
     @for (contact of contactList(); track contact.id) {
-    <app-contact-card [contact]="contact"></app-contact-card>
+    <app-contact-card
+      [contact]="contact"
+      (contactEdited)="editContact($event)"
+      (contactDeleted)="deleteContact($event)"
+    ></app-contact-card>
     }
   </ul>
 </section>
