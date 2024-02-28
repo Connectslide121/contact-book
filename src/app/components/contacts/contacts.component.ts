@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { Contact, FilterType } from '../../models/contacts';
+import { ContactCardComponent } from '../contact-card/contact-card.component';
 
 @Component({
   selector: 'app-contacts',
   standalone: true,
-  imports: [],
+  imports: [ContactCardComponent],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.css',
 })

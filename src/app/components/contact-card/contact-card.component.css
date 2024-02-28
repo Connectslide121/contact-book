@@ -1,0 +1,87 @@
+li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+li label {
+  width: 100%;
+  text-align: center;
+  padding: 3px;
+}
+
+#check {
+  position: absolute;
+  left: 10px;
+}
+
+li.contact {
+  background-color: #222;
+}
+
+.contact-buttons-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+}
+
+li.contact button {
+  display: none;
+  background-color: #5b5b5b;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+li.contact button:hover {
+  color: #a8a8a8;
+}
+
+li.contact:hover button {
+  display: block;
+}
+
+li.contact input[type="checkbox"] {
+  @apply w-4 h-4 cursor-pointer;
+}
+
+li.contact-editing input,
+li.contact-editing textarea {
+  @apply w-full bg-background-300 rounded-lg p-2 outline-none text-white;
+  resize: none;
+}
+
+.editing-buttons-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin: 10px;
+}
+.editing-buttons-wrapper button {
+  padding: 2px 6px;
+  background-color: #5b5b5b;
+  border-radius: 4px;
+}
+
+.editing-buttons-wrapper button:hover {
+  color: #a8a8a8;
+}
+
+.contact-editing input,
+.contact-editing textarea {
+  @apply w-full bg-background-300 rounded-lg p-2 outline-none text-white;
+  resize: none;
+}
+
+.contact-editing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 700px;
+  margin-inline: auto;
+}

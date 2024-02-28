@@ -1,0 +1,33 @@
+@if(!contact.editing){
+<li class="contact">
+  <input id="check" type="checkbox" />
+  <label>🙍‍♂️ {{ contact.name }}</label>
+  <label>🏢 {{ contact.company }}</label>
+  <label>📧 {{ contact.email }}</label>
+  <label>☎️ {{ contact.phone }}</label>
+  <label>ℹ️ {{ contact.comment }}</label>
+  <div class="contact-buttons-wrapper">
+    <button (click)="changeEditing(contact, true)">Edit</button>
+    <button>Delete</button>
+  </div>
+</li>
+} @else {
+<li class="contact-editing">
+  <input type="text" placeholder="Name" value="{{ contact.name }}" />
+  <!--minute 39:41 - https://www.youtube.com/watch?v=mAnTRqO_zw8&t=2381s -->
+  <input type="text" placeholder="Company" value="{{ contact.company }}" />
+  <input type="email" placeholder="Email" value="{{ contact.email }}" />
+  <input type="text" placeholder="Phone" value="{{ contact.phone }}" />
+  <textarea
+    type="text"
+    placeholder="Comment"
+    rows="5"
+    value="{{ contact.comment }}"
+  ></textarea>
+  <div class="editing-buttons-wrapper">
+    <button (click)="editContact(contact)">Save</button>
+    <!-- SET "contact" VALUE USING FORM before passing it to editContact() -->
+    <button (click)="changeEditing(contact, false)">Cancel</button>
+  </div>
+</li>
+}
