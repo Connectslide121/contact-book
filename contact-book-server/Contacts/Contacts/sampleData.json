@@ -1,0 +1,26 @@
+{
+    {
+        "id": "1",
+        "name": "Jon",
+        "email": "jonmendi@gmail.com",
+        "phone": "65654654",
+        "company": "Sprinta",
+        "comment": "Hello there!"
+    },
+    {
+        "id": "2",
+        "name": "Leo",
+        "email": "leo@gmail.com",
+        "phone": "65654654",
+        "company": "Guacamole",
+        "comment": "Hola cariño!"
+    },
+    {
+        "id": "3",
+        "name": "Kimia",
+        "email": "kimia@gmail.com",
+        "phone": "65654654",
+        "company": "Asereje",
+        "comment": "Salam azizam!"
+    }
+}
