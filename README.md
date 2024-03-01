@@ -1,27 +1,50 @@
-# ContactBook
+# Contact Book
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+Contact Book is a modern web application built with Angular that allows users to manage their contacts easily. This project is designed to demonstrate a simple CRUD (Create, Read, Update, Delete) operation using Angular as the front-end framework.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Add new contact
+- View list of contacts
+- Update contact information
+- Delete contact
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Before you begin, ensure you have met the following requirements:
 
-## Build
+- Node.js (version specified in `package.json` engines)
+- npm (comes with Node.js)
+- Angular CLI (version specified in `package.json` devDependencies)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+To install Contact Book, follow these steps:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
 
-## Running end-to-end tests
+```bash
+git clone https://github.com/Connectslide121/contact-book.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Navigate to the project directory:
 
-## Further help
+```bash
+cd contact-book/contact-book-client
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+## Usage
+
+To start the development environment, first make sure you start the backend, then run the following command:
+
+```bash
+ng serve
+```
+
+This will launch the application in your default web browser at http://localhost:4200.
