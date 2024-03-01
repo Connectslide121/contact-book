@@ -26,12 +26,14 @@ import {
 export class AppComponent {
   contactList = signal<Contact[]>([]);
   filteredContacts = signal<Contact[]>([]);
+  count: number = this.filteredContacts().length;
 
   async ngOnInit() {
     await getAllContacts().then((contacts) => {
       this.contactList.set(contacts!);
     });
     this.filteredContacts = signal<Contact[]>(this.contactList());
+    this.count = this.filteredContacts().length;
   }
 
   addContact(newContact: Contact) {
@@ -70,6 +72,9 @@ export class AppComponent {
         )
       )
     );
+
+    this.count = this.filteredContacts().length;
+
     return this.filteredContacts;
   }
 }

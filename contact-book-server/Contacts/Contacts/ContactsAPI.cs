@@ -105,7 +105,7 @@ namespace Contacts
             [HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "contact/{id}")] HttpRequest req,
             ILogger log, string id)
         {
-            log.LogInformation($"Deleting contact with id: {id} ...");
+            log.LogInformation($"Deleting contact with id: {id}...");
 
             try
             {
