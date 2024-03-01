@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Jon\\Desktop\\My Projects\\contact-book\\contact-book-server\\Contacts\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|c:\\users\\jon\\desktop\\my projects\\contact-book\\contact-book-server\\contacts\\contacts\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|solutionrelative:contacts\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|c:\\users\\jon\\desktop\\my projects\\contact-book\\contact-book-server\\contacts\\contacts\\contactsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|solutionrelative:contacts\\contactsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|c:\\users\\jon\\desktop\\my projects\\contact-book\\contact-book-server\\contacts\\contacts\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|solutionrelative:contacts\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|c:\\users\\jon\\desktop\\my projects\\contact-book\\contact-book-server\\contacts\\contacts\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 239,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,12 +42,11 @@
               "RelativeToolTip": "Contacts\\Startup.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACMAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T22:04:42.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-29T22:04:42.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ContactsAPI.cs",
               "DocumentMoniker": "C:\\Users\\Jon\\Desktop\\My Projects\\contact-book\\contact-book-server\\Contacts\\Contacts\\ContactsAPI.cs",
               "RelativeDocumentMoniker": "Contacts\\ContactsAPI.cs",
@@ -60,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Users\\Jon\\Desktop\\My Projects\\contact-book\\contact-book-server\\Contacts\\Contacts\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "Contacts\\Models\\Contact.cs",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Contacts\\Models\\Contact.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T21:40:29.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-29T21:40:29.564Z"
             }
           ]
         }

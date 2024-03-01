@@ -3,6 +3,7 @@
   <app-new-contact-form (contactAdded)="addContact($event)" />
   <div class="filter">
     <input
+      id="filter"
       type="text"
       placeholder="Filter"
       (input)="filterContacts()"
