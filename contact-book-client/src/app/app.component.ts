@@ -40,6 +40,7 @@ export class AppComponent {
     createContact(newContact);
     this.contactList.set([...this.contactList(), newContact]);
     this.filteredContacts.set(this.contactList());
+    this.count = this.filteredContacts().length;
   }
 
   changeEditing(contact: Contact, editing: boolean) {
@@ -60,6 +61,7 @@ export class AppComponent {
     this.contactList.set(this.contactList().filter((c) => c.id !== contact.id));
     this.filteredContacts.set(this.contactList());
     deleteContact(contact.id);
+    this.count = this.filteredContacts().length;
   }
 
   filter: FormControl = new FormControl('', { nonNullable: true });
