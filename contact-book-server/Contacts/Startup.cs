@@ -25,7 +25,7 @@ namespace Contacts
         {
             builder.Services.AddSingleton(s =>
             {
-                var connectionString = Configuration["CosmosDBConnection"];
+                var connectionString = Configuration["CosmosDBConnection"]; //ALWAYS ADD THIS CONNECTION STRING IN AZURE PORTAL AS ENVIRONMENT VARIABLE WITHOUT ""
                 if(string.IsNullOrEmpty(connectionString))
                 {
                     throw new InvalidOperationException(

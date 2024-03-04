@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Jon\\Desktop\\My Projects\\contact-book\\contact-book-server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|c:\\users\\jon\\desktop\\my projects\\contact-book\\contact-book-server\\contacts\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|solutionrelative:contacts\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|c:\\users\\jon\\desktop\\my projects\\contact-book\\contact-book-server\\contacts\\contactsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDDF90F6-7036-4DA9-BCD1-B6A0FCA780FB}|Contacts\\Contacts.csproj|solutionrelative:contacts\\contactsapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -27,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "local.settings.json",
+              "DocumentMoniker": "C:\\Users\\Jon\\Desktop\\My Projects\\contact-book\\contact-book-server\\Contacts\\local.settings.json",
+              "RelativeDocumentMoniker": "Contacts\\local.settings.json",
+              "ToolTip": "C:\\Users\\Jon\\Desktop\\My Projects\\contact-book\\contact-book-server\\Contacts\\local.settings.json",
+              "RelativeToolTip": "Contacts\\local.settings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAADBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-04T11:25:50.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ContactsAPI.cs",
               "DocumentMoniker": "C:\\Users\\Jon\\Desktop\\My Projects\\contact-book\\contact-book-server\\Contacts\\ContactsAPI.cs",
               "RelativeDocumentMoniker": "Contacts\\ContactsAPI.cs",
               "ToolTip": "C:\\Users\\Jon\\Desktop\\My Projects\\contact-book\\contact-book-server\\Contacts\\ContactsAPI.cs",
               "RelativeToolTip": "Contacts\\ContactsAPI.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwB4AAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAiwB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-04T08:43:50.356Z",
               "EditorCaption": ""
