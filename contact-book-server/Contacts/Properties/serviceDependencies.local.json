@@ -1,11 +1,15 @@
 {
   "dependencies": {
-    "appInsights1": {
-      "type": "appInsights.sdk"
+    "secrets1": {
+      "type": "secrets.user"
     },
     "storage1": {
-      "type": "storage.emulator",
-      "connectionId": "AzureWebJobsStorage"
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/swedencentral/connectors/AzureWebJobsStorage_654B7F67F0",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/contactfunctionsstorage",
+      "type": "storage.azure",
+      "connectionId": "AzureWebJobsStorage",
+      "dynamicId": null
     }
   }
 }

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/microsoft.insights/components/contact-book-API",
+      "type": "appInsights.azure",
+      "connectionId": "APPLICATIONINSIGHTS_CONNECTION_STRING"
+    },
+    "storage1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/contact-book-API/providers/Microsoft.ServiceLinker/linkers/AzureWebJobsStorage_654B7F67F0, /subscriptions/58b528f6-054e-4b9b-8aab-100824a705ce/resourceGroups/contact-book/providers/Microsoft.Web/sites/contact-book-API/providers/Microsoft.ServiceLinker/linkers/AzureWebJobsStorage_C18B395173",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/contactfunctionsstorage",
+      "type": "storage.azure",
+      "connectionId": "AzureWebJobsStorage",
+      "dynamicId": null
+    }
+  }
+}
